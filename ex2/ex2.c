@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(void)
+int task2(void)
 {
     int i;
     for(i=1; i<101; i++) {

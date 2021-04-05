@@ -1,0 +1,6 @@
+SELECT DISTINCT name
+FROM (
+    SELECT name FROM dogs
+    UNION
+    SELECT name FROM CATS
+);

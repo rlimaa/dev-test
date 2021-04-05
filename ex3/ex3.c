@@ -61,14 +61,25 @@ bool ConcatRemove(char sArg[MAX_STR_SIZE], char tArg[MAX_STR_SIZE], int k) {
     
 }
 
-char * task3(char s[MAX_STR_SIZE], char t[MAX_STR_SIZE], int k)
-{
+char * task3(void)
+{    
+    char s[MAX_STR_SIZE], t[MAX_STR_SIZE];
+    int k;
+
+    printf("Enter source string (s): ");
+    fflush(stdout);
+    fgets(s, sizeof s, stdin);
+
+    printf("Enter target string (t): ");
+    fflush(stdout);
+    fgets(t, sizeof t, stdin);
+
+    printf("Enter the number of operations (k): ");
+    scanf("%d", &k);
+
     if(ConcatRemove(s, t, k)) {
-        printf("yes\n");
+        return "yes\n";
     }
-    else {
-        printf("no\n");
-    }
-    return 0;
+    return "no\n";
 }
 
